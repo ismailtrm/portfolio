@@ -121,8 +121,8 @@ function showContent(tabNumber) {
             animationId = null;  // Reset the animation ID to allow restarting later
             description.innerHTML = `
                 <p>Professional Summary</p>
-                <p>Innovative Computer Engineer specializing in AI-driven backend development, algorithm optimization, and database management. Currently pursuing a Bachelor’s in Computer Engineering.</p>
-                <p>Actively learning both front-end and back-end technologies to gain a comprehensive understanding of the entire development process. I enjoy solving algorithmic problems on LeetCode.</p>
+                <p>Innovative Computer Engineer specializing in AI-driven backend development, algorithm optimization, and database management. Currently pursuing a Bachelor’s in Computer Engineerin[...]
+                <p>Actively learning both front-end and back-end technologies to gain a comprehensive understanding of the entire development process. I enjoy solving algorithmic problems on LeetCode.[...]
                 <p>Core Skills</p>
                 <ul>
                     <li>Programming Languages: Python, JavaScript, C++, Java</li>
@@ -234,12 +234,6 @@ function showContent(tabNumber) {
             if (!animationId) {
                 animate();  // Start the animation only if it's not already running
             }
-            break;
-    }
-}
-
-// Start with the first tab
-showContent(1);
             break;
     }
 }
