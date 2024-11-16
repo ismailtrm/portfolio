@@ -117,65 +117,12 @@ function showContent(tabNumber) {
     switch (tabNumber) {
         case 1:
             stopDonut(); // Clear any running interval first
-            startDonut();
-            description.innerHTML = `
-                <p>Experience</p>
-                <ul>
-                    <li>GDG On Campus IKCU – Core Team Member (October 2024 – Present)</li>
-                    <li>ECO-ROVER – Robotics Developer, Programming Team Member (October 2024 – Present)</li>
-                    <li>Beast Wear – Co-Founder, CTO (March 2024 - Present)
-                        <ul>
-                            <li>Developed a scalable e-commerce platform using Next.js and Firebase.</li>
-                            <li>Integrated shopier and shipping APIs to streamline payment and logistics.</li>
-                        </ul>
-                    </li>
-                    <li>Brif Studio – Co-Founder, Backend-Prompt Engineer (March 2023 - August 2023)
-                        <ul>
-                            <li>Engineered AI-integrated backend systems to automate presentation generation.</li>
-                            <li>Optimized database management systems, reducing data retrieval times by 40%.</li>
-                        </ul>
-                    </li>
-                    <li>TradeMonex – Backend Developer (August 2022 – February 2023)
-                        <ul>
-                            <li>Automated data processing workflows, reducing manual input requirements by 30%.</li>
-                        </ul>
-                    </li>
-                    <li>İzelman Robotics – Head of Programming (June 2022 – January 2024)
-                        <ul>
-                            <li>Led development of autonomous and manual control systems for robotics, utilizing AI and sensor fusion.</li>
-                            <li>Designed and implemented control algorithms (e.g., PID) to enhance robotic performance.</li>
-                            <li>Facilitated hardware-software integration in complex robotics systems.</li>
-                            <li>Provided mentorship, contributing to improved team outcomes and technical skills.</li>
-                        </ul>
-                    </li>
-                    <li>Gökbörü ROV Team – Technical Lead (October 2022 - April 2023)
-                        <ul>
-                            <li>Developed ROS-Mavlink protocols for real-time underwater operations.</li>
-                            <li>Implemented AI-driven image processing algorithms for sonar data, improving detection accuracy by 10%.</li>
-                            <li>Designed a proprietary sonar system with 360-degree scanning capabilities, enhancing environmental awareness.</li>
-                            <li>Utilized algorithms (Sea-Thru, YOLO) for underwater image correction and perception.</li>
-                        </ul>
-                    </li>
-                </ul>
-            `;
-            break;
-        case 2:
-            stopDonut();
-            description.innerHTML = `<p>Tab 2: 3D Torus using Three.js will be shown here.</p>`;
-            threejsContainer.style.display = 'block';
-            initThreeJS();
-            if (!animationId) {
-                animate();  // Start the animation only if it's not already running
-            }
-            break;
-        case 3:
-            stopDonut();
             cancelAnimationFrame(animationId);  // Stop the animation loop
             animationId = null;  // Reset the animation ID to allow restarting later
             description.innerHTML = `
                 <p>Professional Summary</p>
-                <p>Innovative Computer Engineer specializing in AI-driven backend development, algorithm optimization, and database management. Currently pursuing a Bachelor’s in Computer Engineering with a focus on AI integration. Known for technical leadership and a strong foundation in autonomous systems and robotics.</p>
-                <p>Actively learning both front-end and back-end technologies to gain a comprehensive understanding of the entire development process. I enjoy solving algorithmic problems on LeetCode, continually enhancing my expertise in data structures and writing efficient code.</p>
+                <p>Innovative Computer Engineer specializing in AI-driven backend development, algorithm optimization, and database management. Currently pursuing a Bachelor’s in Computer Engineering.</p>
+                <p>Actively learning both front-end and back-end technologies to gain a comprehensive understanding of the entire development process. I enjoy solving algorithmic problems on LeetCode.</p>
                 <p>Core Skills</p>
                 <ul>
                     <li>Programming Languages: Python, JavaScript, C++, Java</li>
@@ -233,6 +180,66 @@ function showContent(tabNumber) {
                     <li>German: A2 level</li>
                 </ul>
             `;
+            break;
+        case 2:
+            stopDonut(); // Clear any running interval first
+            startDonut();
+            description.innerHTML = `
+                <p>Experience</p>
+                <ul>
+                    <li>GDG On Campus IKCU – Core Team Member (October 2024 – Present)</li>
+                    <li>ECO-ROVER – Robotics Developer, Programming Team Member (October 2024 – Present)</li>
+                    <li>Beast Wear – Co-Founder, CTO (March 2024 - Present)
+                        <ul>
+                            <li>Developed a scalable e-commerce platform using Next.js and Firebase.</li>
+                            <li>Integrated shopier and shipping APIs to streamline payment and logistics.</li>
+                        </ul>
+                    </li>
+                    <li>Brif Studio – Co-Founder, Backend-Prompt Engineer (March 2023 - August 2023)
+                        <ul>
+                            <li>Engineered AI-integrated backend systems to automate presentation generation.</li>
+                            <li>Optimized database management systems, reducing data retrieval times by 40%.</li>
+                        </ul>
+                    </li>
+                    <li>TradeMonex – Backend Developer (August 2022 – February 2023)
+                        <ul>
+                            <li>Automated data processing workflows, reducing manual input requirements by 30%.</li>
+                        </ul>
+                    </li>
+                    <li>İzelman Robotics – Head of Programming (June 2022 – January 2024)
+                        <ul>
+                            <li>Led development of autonomous and manual control systems for robotics, utilizing AI and sensor fusion.</li>
+                            <li>Designed and implemented control algorithms (e.g., PID) to enhance robotic performance.</li>
+                            <li>Facilitated hardware-software integration in complex robotics systems.</li>
+                            <li>Provided mentorship, contributing to improved team outcomes and technical skills.</li>
+                        </ul>
+                    </li>
+                    <li>Gökbörü ROV Team – Technical Lead (October 2022 - April 2023)
+                        <ul>
+                            <li>Developed ROS-Mavlink protocols for real-time underwater operations.</li>
+                            <li>Implemented AI-driven image processing algorithms for sonar data, improving detection accuracy by 10%.</li>
+                            <li>Designed a proprietary sonar system with 360-degree scanning capabilities, enhancing environmental awareness.</li>
+                            <li>Utilized algorithms (Sea-Thru, YOLO) for underwater image correction and perception.</li>
+                        </ul>
+                    </li>
+                </ul>
+            `;
+            screen.style.display = 'block';
+            break;
+        case 3:
+            stopDonut();
+            description.innerHTML = `<p>Tab 2: 3D Torus using Three.js will be shown here.</p>`;
+            threejsContainer.style.display = 'block';
+            initThreeJS();
+            if (!animationId) {
+                animate();  // Start the animation only if it's not already running
+            }
+            break;
+    }
+}
+
+// Start with the first tab
+showContent(1);
             break;
     }
 }
