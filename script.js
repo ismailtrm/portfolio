@@ -63,11 +63,38 @@ function initThreeJS() {
 
     // Scene
     scene = new THREE.Scene();
-    scene.background = new THREE.Color(0x1c1c1c);
 
     // Camera
     camera = new THREE.PerspectiveCamera(45, container.clientWidth / container.clientHeight, 0.1, 1000);
     camera.position.set(0, 0, 10);
+
+    // Gradient background
+    const vertexShader = `
+        varying vec2 vUv;
+        void main() {
+            vUv = uv;
+            gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+        }
+    `;
+
+    const fragmentShader = `
+        varying vec2 vUv;
+        void main() {
+            vec3 color = mix(vec3(0.04, 0.04, 0.04), vec3(0.07, 0.07, 0.07), vUv.x);
+            gl_FragColor = vec4(color, 1.0);
+        }
+    `;
+
+    const gradientMaterial = new THREE.ShaderMaterial({
+        vertexShader,
+        fragmentShader,
+        side: THREE.DoubleSide
+    });
+
+    const planeGeometry = new THREE.PlaneGeometry(2, 2, 1, 1);
+    const gradientPlane = new THREE.Mesh(planeGeometry, gradientMaterial);
+    gradientPlane.scale.set(container.clientWidth, container.clientHeight, 1);
+    scene.add(gradientPlane);
 
     // Torus
     const geometry = new THREE.TorusGeometry(2, 1, 16, 120);
@@ -87,6 +114,7 @@ function initThreeJS() {
         camera.aspect = container.clientWidth / container.clientHeight;
         camera.updateProjectionMatrix();
         renderer.setSize(container.clientWidth, container.clientHeight);
+        gradientPlane.scale.set(container.clientWidth, container.clientHeight, 1);
     });
 }
 
