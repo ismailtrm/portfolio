@@ -6,8 +6,8 @@ body {
     align-items: center;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #2c3e50, #4ca1af);
-    color: #ecf0f1;
+    background: linear-gradient(135deg, #1a1a1a, #333333); /* Updated to black and dark gray */
+    color: #f5f5f5; /* Light gray text for better contrast */
     min-height: 100vh;
     overflow-x: hidden;
 }
@@ -16,8 +16,8 @@ body {
 #screen {
     width: 80%;
     height: 400px;
-    background: rgba(44, 62, 80, 0.8);
-    color: #ecf0f1;
+    background: rgba(26, 26, 26, 0.8); /* Darker background */
+    color: #f5f5f5; /* Light gray text */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,7 +27,7 @@ body {
     font-family: 'Courier New', monospace;
     white-space: pre;
     display: none;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Darker shadow */
 }
 
 /* Three.js container styles */
@@ -36,7 +36,7 @@ body {
     height: 400px;
     display: none;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Darker shadow */
 }
 
 /* Tabs styles */
@@ -53,7 +53,7 @@ body {
     text-align: center;
     padding: 15px 0;
     cursor: pointer;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7); /* Darker background */
     border-radius: 15px;
     margin: 0 5px;
     transition: background 0.3s ease, transform 0.3s ease;
@@ -67,18 +67,18 @@ body {
 .active {
     background: rgba(255, 255, 255, 0.1);
     font-weight: bold;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Darker shadow */
 }
 
 /* Description styles */
 #description {
     width: 80%;
     padding: 20px;
-    background: rgba(44, 62, 80, 0.8);
+    background: rgba(26, 26, 26, 0.8); /* Darker background */
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    text-align: left;  /* Changed from center to left */
-    color: #ecf0f1;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Darker shadow */
+    text-align: left;
+    color: #f5f5f5; /* Light gray text */
     line-height: 1.6;
 }
 
