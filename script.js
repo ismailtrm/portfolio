@@ -172,7 +172,67 @@ function showContent(tabNumber) {
             stopDonut();
             cancelAnimationFrame(animationId);  // Stop the animation loop
             animationId = null;  // Reset the animation ID to allow restarting later
-            description.innerHTML = `<p>Tab 3: Other content can be displayed here.</p>`;
+            description.innerHTML = `
+                <p>Professional Summary</p>
+                <p>Innovative Computer Engineer specializing in AI-driven backend development, algorithm optimization, and database management. Currently pursuing a Bachelor’s in Computer Engineering with a focus on AI integration. Known for technical leadership and a strong foundation in autonomous systems and robotics.</p>
+                <p>Actively learning both front-end and back-end technologies to gain a comprehensive understanding of the entire development process. I enjoy solving algorithmic problems on LeetCode, continually enhancing my expertise in data structures and writing efficient code.</p>
+                <p>Core Skills</p>
+                <ul>
+                    <li>Programming Languages: Python, JavaScript, C++, Java</li>
+                    <li>Frameworks: ROS, OpenCV, YOLO, QT / Django, Selenium, Next.js, Express.js, Firebase, BeautifulSoup</li>
+                    <li>Tools: Git, MATLAB</li>
+                    <li>Databases: MySQL, PostgreSQL</li>
+                </ul>
+                <p>Volunteer Computer Vision Developer – AYA (February 2023)</p>
+                <ul>
+                    <li>Utilize deep learning, computer vision algorithms to identify collapsed buildings from space and satellite imagery.</li>
+                    <li>Utilized Entropy Coding and Remote Sensing for pre-processing to optimize the processing of image analysis.</li>
+                    <li>Contributed to image labelling studies.</li>
+                </ul>
+                <p>Volunteer Educator - ECEV</p>
+                <ul>
+                    <li>Children aged 5-15; I gave FLL robotics training and awareness study, chess education for students over 100.</li>
+                </ul>
+                <p>Key Projects</p>
+                <ul>
+                    <li>SearchStore: Web Scraping Application</li>
+                    <ul>
+                        <li>Technologies: JavaScript, Fetch API</li>
+                        <li>Built a web application for scraping and displaying data from various online stores using JavaScript.</li>
+                        <li>Implemented efficient data retrieval techniques with the Fetch API for real-time data display.</li>
+                    </ul>
+                    <li>AstroReis: AI-Powered Astrology Application</li>
+                    <ul>
+                        <li>Technologies: FastAPI, GenAI-APIs</li>
+                        <li>Developed a backend for AI-driven horoscope predictions.</li>
+                    </ul>
+                </ul>
+                <p>Education</p>
+                <ul>
+                    <li>İzmir Katip Çelebi University</li>
+                    <ul>
+                        <li>B.Sc. in Computer Science and Engineering, Expected Graduation: June 2028</li>
+                    </ul>
+                    <li>Cihat Kora Anatolian High School</li>
+                    <ul>
+                        <li>Science and Math, Graduated: June 2024</li>
+                    </ul>
+                </ul>
+                <p>Certifications & Honors</p>
+                <ul>
+                    <li>Python Automation and Testing | National Association of State Boards of Accountancy (NASBA)</li>
+                    <li>Python Data Analysis | LinkedIn</li>
+                    <li>Advanced Prompt Engineering Techniques | LinkedIn</li>
+                    <li>Artificial Intelligence and Business Strategy | Project Management Institute (PMI)</li>
+                    <li>Critical Thinking for Better Judgment and Decision-Making | Project Management Institute (PMI)</li>
+                </ul>
+                <p>Languages</p>
+                <ul>
+                    <li>Turkish: Native language</li>
+                    <li>English: C1 level – MEB(ministry of public education) Certified C1 – Izmir Katip Celebi University | Celebi Proficiency Test (scored 89%)</li>
+                    <li>German: A2 level</li>
+                </ul>
+            `;
             break;
     }
 }
