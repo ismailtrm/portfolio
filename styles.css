@@ -6,8 +6,8 @@ body {
     align-items: center;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #1a1a1a, #333333); /* Updated to black and dark gray */
-    color: #f5f5f5; /* Light gray text for better contrast */
+    background: linear-gradient(135deg, #000000, #1a1a1a); /* Pure black to very dark gray */
+    color: #e0e0e0; /* Slightly softer light gray for text */
     min-height: 100vh;
     overflow-x: hidden;
 }
@@ -16,8 +16,8 @@ body {
 #screen {
     width: 80%;
     height: 400px;
-    background: rgba(26, 26, 26, 0.8); /* Darker background */
-    color: #f5f5f5; /* Light gray text */
+    background: rgba(10, 10, 10, 0.95); /* Near black, slightly transparent */
+    color: #e0e0e0; /* Softer light gray text */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,7 +27,7 @@ body {
     font-family: 'Courier New', monospace;
     white-space: pre;
     display: none;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Darker shadow */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8); /* Deeper shadow */
 }
 
 /* Three.js container styles */
@@ -36,7 +36,8 @@ body {
     height: 400px;
     display: none;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Darker shadow */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8); /* Deeper shadow */
+    background: rgba(5, 5, 5, 0.9); /* Slightly lighter than screen */
 }
 
 /* Tabs styles */
@@ -53,32 +54,35 @@ body {
     text-align: center;
     padding: 15px 0;
     cursor: pointer;
-    background: rgba(0, 0, 0, 0.7); /* Darker background */
+    background: rgba(20, 20, 20, 0.9); /* Dark gray-black */
     border-radius: 15px;
     margin: 0 5px;
-    transition: background 0.3s ease, transform 0.3s ease;
+    transition: background 0.3s ease, transform 0.3s ease, color 0.3s ease;
+    color: #e0e0e0; /* Softer light gray text */
 }
 
 .tab:hover {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(50, 50, 50, 0.9); /* Subtle lighter effect */
     transform: scale(1.05);
+    color: #ffffff; /* Pure white for hover state */
 }
 
 .active {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(50, 50, 50, 0.9); /* Subtle highlight */
     font-weight: bold;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Darker shadow */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7); /* Deeper shadow */
+    color: #ffffff; /* Pure white text */
 }
 
 /* Description styles */
 #description {
     width: 80%;
     padding: 20px;
-    background: rgba(26, 26, 26, 0.8); /* Darker background */
+    background: rgba(10, 10, 10, 0.95); /* Near black */
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Darker shadow */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8); /* Deeper shadow */
     text-align: left;
-    color: #f5f5f5; /* Light gray text */
+    color: #e0e0e0; /* Softer light gray */
     line-height: 1.6;
 }
 
