@@ -118,7 +118,46 @@ function showContent(tabNumber) {
         case 1:
             stopDonut(); // Clear any running interval first
             startDonut();
-            description.innerHTML = `<p>Tab 1: ASCII Donut will be shown here.</p>`;
+            description.innerHTML = `
+                <p>Experience</p>
+                <ul>
+                    <li>GDG On Campus IKCU – Core Team Member (October 2024 – Present)</li>
+                    <li>ECO-ROVER – Robotics Developer, Programming Team Member (October 2024 – Present)</li>
+                    <li>Beast Wear – Co-Founder, CTO (March 2024 - Present)
+                        <ul>
+                            <li>Developed a scalable e-commerce platform using Next.js and Firebase.</li>
+                            <li>Integrated shopier and shipping APIs to streamline payment and logistics.</li>
+                        </ul>
+                    </li>
+                    <li>Brif Studio – Co-Founder, Backend-Prompt Engineer (March 2023 - August 2023)
+                        <ul>
+                            <li>Engineered AI-integrated backend systems to automate presentation generation.</li>
+                            <li>Optimized database management systems, reducing data retrieval times by 40%.</li>
+                        </ul>
+                    </li>
+                    <li>TradeMonex – Backend Developer (August 2022 – February 2023)
+                        <ul>
+                            <li>Automated data processing workflows, reducing manual input requirements by 30%.</li>
+                        </ul>
+                    </li>
+                    <li>İzelman Robotics – Head of Programming (June 2022 – January 2024)
+                        <ul>
+                            <li>Led development of autonomous and manual control systems for robotics, utilizing AI and sensor fusion.</li>
+                            <li>Designed and implemented control algorithms (e.g., PID) to enhance robotic performance.</li>
+                            <li>Facilitated hardware-software integration in complex robotics systems.</li>
+                            <li>Provided mentorship, contributing to improved team outcomes and technical skills.</li>
+                        </ul>
+                    </li>
+                    <li>Gökbörü ROV Team – Technical Lead (October 2022 - April 2023)
+                        <ul>
+                            <li>Developed ROS-Mavlink protocols for real-time underwater operations.</li>
+                            <li>Implemented AI-driven image processing algorithms for sonar data, improving detection accuracy by 10%.</li>
+                            <li>Designed a proprietary sonar system with 360-degree scanning capabilities, enhancing environmental awareness.</li>
+                            <li>Utilized algorithms (Sea-Thru, YOLO) for underwater image correction and perception.</li>
+                        </ul>
+                    </li>
+                </ul>
+            `;
             break;
         case 2:
             stopDonut();
